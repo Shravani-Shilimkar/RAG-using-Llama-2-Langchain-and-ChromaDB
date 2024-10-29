@@ -1,5 +1,13 @@
 # RAG-using-Llama-2-Langchain-and-ChromaDB
 
+Project Overview:
+The project implements a Retrieval-Augmented Generation (RAG) model that combines LLaMA-2 for large language model-based generation with LangChain for building applications around language models and ChromaDB for efficient vector storage and similarity search. This setup enables the system to handle multi-modal knowledge retrieval effectively, particularly suited for applications that require natural language understanding and information retrieval from structured and unstructured sources.
+
+RAG Framework: The RAG approach augments a language model's responses by retrieving relevant documents from an external knowledge base, thereby enhancing the quality of generated responses with specific, up-to-date information.
+LLaMA-2 Integration: LLaMA-2, a high-performing large language model, powers the generation component, providing advanced natural language responses based on the context retrieved by ChromaDB.
+LangChain: This framework allows chaining of LLM tasks and provides an efficient pipeline to manage input/output data flow, model chaining, and retrieval steps.
+ChromaDB: Utilized as a vector database, ChromaDB stores document embeddings, allowing fast similarity searches to retrieve contextually relevant information, which is passed to LLaMA-2 for response generation.
+
 Objective¶
 Use Llama 2.0, Langchain and ChromaDB to create a Retrieval Augmented Generation (RAG) system. This will allow us to ask questions about our documents (that were not included in the training data), without fine-tunning the Large Language Model (LLM). When using RAG, if you are given a question, you first do a retrieval step to fetch any relevant documents from a special database, a vector database where these documents were indexed.
 
